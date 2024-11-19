@@ -46,9 +46,11 @@
                     <template v-slot:default="{ isActive }">
                       <v-card title="Informació pel·lícula">
                         <v-card-title>{{ detalles.Title }}</v-card-title>
-                        <v-list-item-subtitle  class="ml-5">{{ detalles.Year }}</v-list-item-subtitle>
-                        <v-list-item-subtitle class="ml-5">{{ detalles.Rated }}</v-list-item-subtitle>
-                        <v-list-item-subtitle class="ml-5">{{ detalles.Released }}</v-list-item-subtitle> 
+                        <v-list-item-subtitle  class="mx-5">Any: {{ detalles.Year }}</v-list-item-subtitle>
+                        <v-list-item-subtitle class="mx-5">Classificat: {{ detalles.Rated }}</v-list-item-subtitle>
+                        <v-list-item-subtitle class="mx-5">Realitzat: {{ detalles.Released }}</v-list-item-subtitle> 
+                        <v-list-item-subtitle class="mx-5 ">Trama: {{ detalles.Plot }}</v-list-item-subtitle> 
+
 
                         <v-card-actions>
                           <v-spacer></v-spacer>
